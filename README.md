@@ -57,7 +57,7 @@ SecRule REQUEST_URI "^/MSALParser\.php" phase:1,nolog,allow
 * In the target server that will host MSALParser
   * Make sure php is installed/compiled with mysqli extension
   * Create a db/user/password give related privileges for the user on the db 
-  * Login with the user/password into mysql and run /doc/msaldbschema.sql in order to create needed tables. Make sure they are created 
+  * Login with the user/password into mysql and run MSALParser/msaldb.sql in order to create needed tables. Make sure they are created 
   * in /persistent/MSALDB.php update mysql db/user/password pairs that you just created
 
 ```
