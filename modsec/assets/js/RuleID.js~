@@ -1,0 +1,16 @@
+$(document).ready(function () {
+            $.getJSON("getRuleID.php", function (result) {
+                var chart = new CanvasJS.Chart("chartContainer3", {
+					title:{
+						text: "Top Rule In Last 24 hours"
+				  	},                    
+					data: [
+                        {
+                            type: "column",
+                            dataPoints: result
+                        }
+                    ]
+                });
+                chart.render();
+            });
+        });
